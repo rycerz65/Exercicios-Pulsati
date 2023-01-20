@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Peça para o Cliente escolher entre quatro pedidos sendo eles
+//1 Pizza = R$12,00 
+//2 Pão de Queijo = R$ 4,00 
+//3 Macarrão R$ 16,00 
+//4 Pastel = R$ 4,50
+//Após a escolha pergunte quanto o cliente estará dando de valor ao caixa.
+//Ao final do programa calcule se o Cliente precisa de troco ou não e informe o valor do troco caso necesário.
+let numero1 = parseFloat(prompt('escolha um dos seguinte itens do cardapio digitando o numero do item 1. Pizza = R$12,00 2. Pão de Queijo = R$ 4,00 3. Macarrão R$ 16,00 4. Pastel = R$ 4,50'));
+
+let numero3 = parseFloat(prompt('Qual o valor que você tem? '))
+
+if (numero1 == 1) {
+                media = numero3 - 12;
+            document.write('O seu troco é de ',media)}
+                
+if (numero1 == 2) {
+    media = numero3 - 4;
+            document.write('O seu troco é de ',media)}
+                
+if (numero1 == 3) {
+    media = numero3 - 16;
+            document.write('O seu troco é de ',media)}
+                
+if (numero1 == 4) {
+    media = numero3 - 4,50;
+            document.write('O seu troco é de ',media)}
+            
+        
+              
+    </script>
+</body>
+</html>

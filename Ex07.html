@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Peça para informar 3 notas do alunos e sua quantidade de faltas para 
+        //o aluno aprovar é necessario que ele tenha media acima de 7 e faltas menor que 50.
+        
+      
+        let numero1 = parseFloat(prompt('Digite a sua nota 1/3'));
+
+        let numero2 = parseFloat(prompt('Digite a sua nota 2/3'));
+
+        let numero3 = parseFloat(prompt('Digite a sua nota 3/3'));
+
+        let media = ((numero1 + numero2 + numero3)/3)
+
+
+             let faltas = (prompt('Informe quantos dias faltou'));
+
+                if (media >= 7 && faltas <= 10) {
+                      document.write('Aprovado');
+                      } else {
+                          document.write('Reprovado');}
+
+    </script>
+</body>
+</html>

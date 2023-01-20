@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Faça um programa onde peça para o usuario informar 3 numeros, e depois mostre qual o MENOR numero entre eles.
+        let numero1 = parseFloat(prompt('Digite um numero 1/3'));
+
+        let numero2 = parseFloat(prompt('Digite um numero 2/3'));
+
+        let numero3 = parseFloat(prompt('Digite um numero 3/3'));
+
+        if (numero1 < numero2 && numero1 < numero3) {
+                document.write('O maior número é o primeiro digitado ', numero1)
+
+            } else if (numero2 < numero1 && numero2 < numero3) {
+                document.write('O maior número é o segundo digitado: ', numero2);
+
+                    } else {
+                        document.write('O maior número é o terceiro digitado: ', numero3);
+                    }
+
+    </script>
+</body>
+</html>

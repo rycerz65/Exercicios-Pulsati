@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Faça um programa que peça os 3 lados de um triangulo e mostre qual o tipo: Equilátero, isoceles, Escaleno
+
+        //Equilatero: 3 lados iguais Isosceles: 2 lados iguais e 1 diferente Escaleno: 3 lados diferentes
+        let numero1 = parseFloat(prompt('informe o tamanho do lado esquerdo do triangulo'))
+
+        let numero2 = parseFloat(prompt('informe o tamanho do lado direito do triangulo'))
+
+        let numero3 = parseFloat(prompt('informe o tamanho da parte inferior do triangulo'))
+
+        if (numero1 == numero2 && numero1 == numero3) {
+                document.write('Equilatero')
+
+            } else if (numero1 == numero2 && numero1 != numero3) {
+                document.write('Isosceles');
+            } else if (numero1 != numero2 && numero1 == numero3) {
+                document.write('Isosceles');   
+            } else if (numero1 != numero2 && numero1 != numero3) {
+                document.write('Escaleno');   
+            } else if (numero1 != numero2 && numero1 != numero3) {
+                document.write('Escaleno');}
+    </script>
+</body>
+</html>

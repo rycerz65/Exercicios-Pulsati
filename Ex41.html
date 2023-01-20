@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa que verifique se um número é divisível por outro
+        let n1 = parseFloat(prompt('Digite um numero'))
+        let n2 = parseFloat(prompt('Digite outro numero'))
+
+        let total = n1 / n2;
+        let resultado = total % 2 == 0 
+
+        if(resultado == 0 ){
+            document.write('Esse número é divisivel por ',n2, ' e o resultado é ', total)
+
+        }else{
+            document.write('Esse número não é divisivel por 3')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Escreva um programa que verifique se todos os números são ou pares ou impares de um array.
+        let lista = []              //array para guardar os numeros digitados
+        let opcao = true                                        // variavel para saber se quer continuar
+        let numeroescolhido                                     // variavel do numero escolhido
+        let impares = []
+        let pares = []
+        let divisao
+        do {
+
+        numeroescolhido = parseInt(prompt("Digite um numero"))  //variavel onde vai adicionar o numero escolhido no vetor
+        lista.push(numeroescolhido)                             //.push é usado para registrar o numero dentro do vetor, que foi escrito na varial entre ()
+        if(numeroescolhido % 2 ==0){
+            pares.push(numeroescolhido)
+        }else{
+            impares.push(numeroescolhido)                       //if else feito para separar em outro vetor os impares dos pares
+        }                              
+        opcao = confirm("Quer continuar?")                      //alerta colocado para aparecer dps de cada numero para saber se quer continuar
+                                                          
+        } while (opcao == true)                                 //loop feito para o alerta
+                                                                
+        document.write('esses são os numeros impares ',impares,"<br>");
+        document.write('esses são os numeros pares ',pares);
+
+        
+    </script>
+</body>
+</html>

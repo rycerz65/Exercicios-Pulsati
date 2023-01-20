@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//Escreva um programa que calcule a média de uma lista de números com 
+//quantidade definida pelo usuário
+
+  let lista = [];
+  let opcao = true                                      // variavel para saber se quer continuar
+  let numeroescolhido                                   // variavel do numero escolhido
+  let soma = 0
+  do {
+
+ numeroescolhido = parseInt(prompt("Digite um numero")) //variavel onde vai adicionar o numero escolhido no vetor
+  lista.push(numeroescolhido)                           //.push é usado para registrar o numero dentro do vetor, que foi escrito na varial entre ()
+  soma = soma + numeroescolhido                         //***** foi criado a variavel soma antes do while para fazer o calculo e dividir pelo numero de vezes que ele continua na opção de definir outro numero
+  opcao = confirm("Quer continuar?")                    //alerta colocado para aparecer dps de cada numero para saber se quer continuar
+                                                          
+  } while (opcao == true)                               //loop feito para o alerta
+  media = soma / lista.length                           //na opção while colocamos apenas para gerar a media já com a soma de todos o numeros, dividindo os mesmos pelo numero de caracteres registrados no vetor 
+  document.write(media);
+        
+        
+        
+
+
+//let lista = parseFloat(prompt('Numero da lista'))
+
+//for (var  i = 0; i <= lista; i++) {
+                            
+  //  document.write('Digite um numero')
+
+//document.write("<br>")
+
+//}
+
+
+
+
+
+    </script>
+</body>
+</html>

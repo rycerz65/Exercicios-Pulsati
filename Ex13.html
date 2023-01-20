@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Faça um script para calcular a 
+        //Hipotenusa de um triangulo retangulo, onde o usuario informa os catetos e o programa calcula a hipotenusa.
+
+        let cateto1 = parseFloat(prompt('Informe o cateto 1'))
+        let cateto2 = parseFloat(prompt('Informe o cateto 2'))
+
+        somacateto = ((cateto1 * cateto1)+(cateto2 * cateto2))
+        let raizquadrada = Math.sqrt(somacateto)
+        document.write('A hipotenusa é : ', raizquadrada.toFixed(2))
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa que calcule a soma dos números impares de uma lista
+        let impar = []
+        let lista = [] 
+        let pares = []
+        let numeroescolhido
+        let soma = 0
+        do {
+           numeroescolhido = parseFloat(prompt('Digite um numero')) 
+           lista.push(numeroescolhido)
+                             //alerta colocado para aparecer dps de cada numero para saber se quer continuar
+        if(numeroescolhido % 2 ==1){
+            impar.push(numeroescolhido)                                       
+       }else{
+        pares.push(numeroescolhido)
+       }
+        opcao = confirm("Quer continuar?") 
+    }while (opcao == true) 
+    for (let i = 0; i <= impar.length -1; i++){
+        soma += impar[i]
+        
+    }
+    document.write(soma)
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Escreva um programa que gere um numero aleatório e some até que essa 
+    //soma dos números passe de 200
+
+    let soma = 0;
+    let num = 0;
+    do {
+
+    soma = soma + parseInt(Math.random() * 50)      //Math.random * 50 usado para gerar numeros alearios abaixo de 50  obs: o M do Math tem que ser maisculo
+
+    document.write("Numeros gerados: " + soma + "<br>")
+
+    } while (soma <= 200);
+
+    document.write("TOTAL: " + soma);
+    
+    </script>
+</body>
+</html>

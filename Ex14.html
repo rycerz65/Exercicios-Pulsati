@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //Faça um script para calcular quanto será gasto em uma viagem, onde o usuario informa 
+        //a distancia em KM e o consumo do carro em KM/L e o programa calcula o valor da viagem.
+
+        let distancia = parseFloat(prompt('Qual a distancia até o destino'))
+        let consumo = parseFloat(prompt('Qual o consumo medio do carro em KM/L'))
+
+        let valor = ((distancia / consumo) * 5.26)
+            document.write('Sera gasto R$', valor.toFixed(2), ' de combustivel')
+    </script>
+</body>
+</html>

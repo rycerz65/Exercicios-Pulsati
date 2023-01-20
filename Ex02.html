@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     // Peça três notas ao aluno, converta para numero e calcule a media do mesmo,
+     //caso a media for menor que 7 mostrar que foi reprovado, caso a media seja 
+     //exatamente 7 mostrar que ele passou com a media 7 caso a media seja maior que 7
+     // mostrar que ele passou com media acima de 7.
+    
+         let numero1 = parseFloat(prompt('Digite a sua nota 1/3'));
+
+         let numero2 = parseFloat(prompt('Digite a sua nota 2/3'));
+
+         let numero3 = parseFloat(prompt('Digite a sua nota 3/3'));
+
+         let media = ((numero1 + numero2 + numero3)/3)
+
+         if (media < 7) {
+                document.write('Reprovado');
+            } else if (media == 7){
+                document.write('Aprovado com media 7');
+                    } else {
+                        document.write('Aprovado com media aciam de 7;');
+                    }
+            
+//if (idade > 18) {
+   //document.write('Você é maior de idade');
+//} else if (idade == 18) {
+ //  document.write('Você tem 18 anos');
+//} else {
+  // document.write('Você é menor de idade');
+//}
+
+
+    </script>
+</body>
+</html>

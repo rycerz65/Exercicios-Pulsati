@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Escreva um programa que ordene uma lista de números em ordem crescente.
+        let lista = [0,2,5,52,35];
+
+        lista.sort(function (a, b) {
+        if (a > b) return 1;
+        if (a < b) return -1;
+
+        return 0;
+    });
+
+    document.write(lista);
+
+//  exemplo onde a pessoa escolhe os numero 
+//  let lista = [];
+//  let opcao = true         // opção para saber se quer continuar
+//  let numeroescolhido      // varial do numero escolhido
+//  do {
+
+//  numeroescolhido = parseInt(prompt("Digite um numero"))  //variavel onde vai adicionar o numero escolhido no vetor
+//  lista.push(numeroescolhido)         //.push é usado para registrar o numero dentro do vetor, que foi escrito na varial entre ()
+//  opcao = confirm("Quer continuar?")  //alerta colocado para aparecer dps de cada numero para saber se quer continuar
+//  } while (opcao == true)             //loop feito para o alerta
+//  lista.sort(function (a, b) {        //.sort colocado para ordernar os numeros em ordem crescente
+//  if (a > b) return 1;
+//  if (a < b) return -1;
+//  return 0;
+//  });
+//  document.write(lista);
+    </script>
+</body>
+</html>

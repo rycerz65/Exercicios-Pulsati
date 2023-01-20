@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Numa eleição existem três candidatos. Faça um programa que peça o número total de eleitores.
+        //Peça para cada eleitor votar e ao final mostrar o número de votos de cada candidato.
+
+        let numero = parseFloat(prompt('Digite o numero de eleitores '))
+        let candidato1 = 0
+        let candidato2 = 0
+        let candidato3 = 0
+
+        for (let i = 1; i <= numero; i++) {
+            voto = parseFloat(prompt(
+                'Em quem você quer votar anastacio digite 1 clauldio digite 2 osvaldo digite 3'))
+            switch (voto){
+                case '1':
+                    document.write(candidato1++)
+                    break
+            }switch (voto){
+                case '2':
+                    document.write(candidato2++)
+                    break
+            }switch (voto){
+                case '3':
+                    document.write(candidato3++)
+                    break
+                }   
+
+        document.write('.',voto,'.')
+         
+        }
+    </script>
+</body>
+</html>

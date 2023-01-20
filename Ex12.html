@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                        //Faça um programa que peça ao usuario o seu usuario o salario dele. <br> <br>
+                        //salários até R$ 280,00: aumento de 20% <br>
+                        //salários entre R$ 280,00 e R$ 700 00 : aumento de 15% <br>
+                        //salários maior que R$ 700,00 : aumento de 10%
+
+                        //salário antes do reajuste;
+                        //percentual de aumento aplicado;
+                        //valor do aumento;
+                        //novo salário, após o aumento.
+                        let numero1 = parseFloat(prompt('Informe seu salário'))
+
+
+
+                        if (numero1 <= 280.00){
+                            document.write('Salário antes do reajuste: ', numero1);
+                            document.write(' Aumento de 20% ');
+                            document.write(' Valor do aumento ',numero1 * 0.20);
+                            novosalario = (numero1 * 1.20);
+                            document.write(' Novo salário, após o aumento ',novosalario);
+
+
+                      
+                        }if (numero1 > 280.00 && numero1 < 700.00){
+                            document.write(' Salário antes do reajuste: ', numero1);
+                            document.write(' Aumento de 15% ');
+                            document.write(' Valor do aumento ',numero1 * 0.15);
+                            novosalario = (numero1 * 1.15);
+                            document.write(' Novo salário, após o aumento ',novosalario);
+                        
+                        
+                        }if (numero1 > 700.00){
+                            novosalario = (numero1 * 1.10);
+                            document.write('Salário antes do reajuste: ', numero1);
+                            document.write(' Aumento de 10% ');
+                            document.write(' Valor do aumento ',numero1 * 0.10);
+                            document.write(' Novo salário, após o aumento ',novosalario);
+                        }
+
+    </script>
+</body>
+</html>
